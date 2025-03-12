@@ -27,6 +27,25 @@ caja.style.color = "red";
 const nuevoDiv = document.createElement('div');
 nuevoDiv.textContent = 'Soy un nuevo DIV';
 document.body.appendChild(nuevoDiv);
+
+// Seleccionar los elementos
+let boton = document.getElementById("miBoton");
+let boton2 = document.getElementById("miBoton2");
+
+// Definir la función para el evento
+function mostrarAlerta() {
+    alert("¡Botón clickeado!");
+}
+
+// Agregar el evento al primer botón
+boton.addEventListener("click", mostrarAlerta);
+
+// Agregar evento al segundo botón para eliminar el evento del primero
+boton2.addEventListener("click", function() {
+    alert("¡Evento eliminado del primer botón!");
+    boton.removeEventListener("click", mostrarAlerta); // Se quita el evento
+});
+
  // Un ejemplo de función
 //  function saludar() {
 //      let nombre = prompt("ingrese su nombre")
