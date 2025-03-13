@@ -87,5 +87,11 @@ function quitarEstilo(){
     caja.classList.remove("highlight");
 }
 
+function ocultar(){
+    caja1.style.display = "none";
+}
 
+function mostar(){
+    caja1.style.display = "block";
+}
 
