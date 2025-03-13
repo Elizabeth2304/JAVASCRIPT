@@ -54,3 +54,38 @@ boton2.addEventListener("click", function() {
 //  }
 //  saludar();
 
+document.addEventListener("keydown", function(evento) {
+    console.log("Tecla presionada: " + evento.key);
+});
+    
+
+//let caja = document.getElementById("miCaja");
+
+caja.addEventListener("mouseover", function() {
+    caja.style.backgroundColor = "blue";
+});
+
+caja.addEventListener("mouseout", function() {
+    caja.style.backgroundColor = "white";
+});
+
+let caja1 = document.getElementById("caja1")
+let caja2 = document.getElementById("caja2")
+let caja3 = document.getElementById("caja3")
+let caja4 = document.getElementById("caja4")
+let caja5 = document.getElementById("caja5")
+    
+function cambiarEstilo(){
+    caja.classList.toggle("highlight");
+}
+
+function agregarEstilo(){
+    caja.classList.add("highlight");
+}
+
+function quitarEstilo(){
+    caja.classList.remove("highlight");
+}
+
+
+
